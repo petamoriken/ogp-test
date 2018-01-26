@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JSONをFetchして動的にOGPを変える</title>
+</head>
+<body><script>
+
+(async () => {
+  const res = await fetch("fetch.json");
+  const data = await res.json();
+  for (const [key, value] of Object.entries(data)) {
+    const element = document.createElement("meta");
+    element.setAttribute("property", key);
+    element.setAttribute("content", value);
+    document.head.appendChild(element);
+  }
+  document.body.textContent = "読み込み完了";
+})();
+
+</script></body></html>

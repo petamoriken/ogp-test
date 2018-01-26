@@ -1,0 +1,8 @@
+{
+    "og:title": "JSONをFetchして動的にOGPを変える",
+    "og:url": "https://petamoriken.github.io/ogp-test/fetch",
+    "og:type": "website",
+    "og:locale": "ja_JP",
+    "og:site_name": "ogp-test",
+    "og:description": "OGPのテスト"
+}
